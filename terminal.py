@@ -17,8 +17,14 @@ while running:
 
     if "say" in commands:
         sayword = input("What to say? ")
-        print(f"\n\n\n\{sayword}")
+        print(f"\n\n\n{sayword}")
 
     if "help" in commands:
         print("You can write 'say': to print what you wrote")
         print("'vim': to run Vi IMporved")
+        print("'exit': to exit terminal")
+    
+    if "exit" in commands:
+        print("Exiting...")
+        time.sleep(2)
+        exit()
